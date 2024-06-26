@@ -1,16 +1,90 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Library</title>
+  <style>
+    body {
+      background-color: #f8f8f8; /* Background color for the entire page */
+      font-family: Arial, sans-serif; /* Font family for text */
+      margin: 0;
+      padding: 0;
+    }
 
+    .book-library {
+      max-width: 800px; /* Max width for the book library container */
+      margin: 20px auto; /* Center align the book library */
+      background-color: #ffffff; /* Background color for the book library */
+      padding: 20px; /* Padding inside the book library container */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    }
+
+    .book {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      background-color: #ffffff; /* Background color for each book block */
+    }
+
+    .book img {
+      max-width: 100%; /* Ensure images fit within their container */
+      height: auto;
+      border-radius: 5px; /* Rounded corners for the book cover images */
+    }
+
+    .book .title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .book .author {
+      color: #777777; /* Author name color */
+      margin-bottom: 5px;
+    }
+
+    .book .price-block {
+      background-color: #2ecc71; /* Price block background color */
+      color: #ffffff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="book-library">
+  <!-- Book 1 -->
+  <div class="book">
+    <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg" alt="Spy in the Amber">
+    <div class="title">Spy in the Amber</div>
+    <div class="author">Author Name</div>
+    <div class="price-block">$19.99</div>
+  </div>
+
+  <!-- Book 2 -->
+  <div class="book">
+    <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg" alt="Sacred Games">
+    <div class="title">Sacred Games</div>
+    <div class="author">Author Name</div>
+    <div class="price-block">$24.99</div>
+  </div>
+
+  <!-- Book 3 -->
+  <div class="book">
+    <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg" alt="Byomkesh Bakshi">
+    <div class="title">Byomkesh Bakshi</div>
+    <div class="author">Author Name</div>
+    <div class="price-block">$29.99</div>
+  </div>
+</div>
 
 </body>
-
 </html>
